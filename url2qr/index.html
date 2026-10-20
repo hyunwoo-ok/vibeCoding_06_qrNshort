@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>URL2QR | QRnShort</title><link rel="stylesheet" href="../assets/style.css"><script src="../assets/qrcode.js" defer></script><script src="../assets/common.js" defer></script><script src="./script.js" defer></script></head>
+<body><header><a class="brand" href="../index.html">QR<span>n</span>Short<span class="dot">.</span></a><a class="back" href="../index.html">← 메인으로</a></header>
+<main class="tool"><p class="eyebrow">01 / URL2QR</p><h1>주소 하나로, 바로 연결.</h1><p class="intro">URL을 QR코드로 만들고 이미지로 저장하세요.</p>
+<section class="panel">
+<div id="qr-result" class="result qr-result" hidden><a id="qr-download" class="qr-link" download="qrcode.jpg" aria-label="QR코드 JPG 이미지 다운로드"><canvas id="qr-canvas"></canvas></a><p id="qr-url"></p><div class="result-actions"><a id="download-button" class="button" download="qrcode.jpg">JPG 다운로드 ↓</a></div><p>QR코드를 클릭해도 저장할 수 있어요.</p></div>
+<form id="qr-form"><label for="url">변환할 URL</label><div class="input-row"><input id="url" type="url" placeholder="https://hyunwoo-ok.github.io/" required maxlength="2000" autocomplete="url"><button id="generate" type="submit" disabled>QR코드 생성</button></div></form>
+<p id="status" class="status" role="status" aria-live="polite"></p><p class="hint">https:// 또는 http://로 시작하는 주소를 입력해 주세요.<br>QR코드는 브라우저에서 생성되며, 입력한 주소를 외부로 전송하지 않습니다.</p>
+</section><p class="source">스마트폰 카메라로 생성된 QR코드를 스캔해 보세요.</p></main>
+<footer><span>QRnShort · URL2QR</span><a href="../urlShort/index.html">URL단축으로 이동 →</a></footer></body></html>
